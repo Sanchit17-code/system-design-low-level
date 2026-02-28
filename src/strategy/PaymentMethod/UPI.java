@@ -1,4 +1,4 @@
-package PaymentMethod;
+package strategy.PaymentMethod;
 
 public class UPI implements PaymentMethod {
     @Override

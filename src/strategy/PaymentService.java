@@ -1,4 +1,6 @@
-import PaymentMethod.PaymentMethod;
+package strategy;
+
+import strategy.PaymentMethod.PaymentMethod;
 
 public class PaymentService {
 //    private PaymentMethod paymentMethod;
@@ -7,7 +9,7 @@ public class PaymentService {
 //        this.paymentMethod = paymentMethod;
 //    }
 
-    public void pay(int amount ,PaymentMethod paymentMethod){
+    public void pay(int amount , PaymentMethod paymentMethod){
         paymentMethod.pay(amount);
     }
 }
