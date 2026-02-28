@@ -1,4 +1,9 @@
 package parkinglot.vehicle;
 
-public class Bike {
+import parkinglot.enums.VehicleType;
+
+public class Bike extends Vehicle{
+    Bike(String vehicleNumber) {
+        super(vehicleNumber, VehicleType.BIKE);
+    }
 }
