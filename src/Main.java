@@ -1,3 +1,5 @@
+import TicTacToe.GameEngine;
+import TicTacToe.Player;
 import command.Chef.Chef;
 import command.Commands.BurgerOrderCommand;
 import command.Commands.Command;
@@ -14,7 +16,9 @@ import strategy.PaymentMethod.Crypto;
 import strategy.PaymentMethod.UPI;
 import strategy.PaymentService;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -101,6 +105,16 @@ public class Main {
 //        p4.sendMessage("message from Shahrukh to everyone");
 
         // ==========================================mediator design pattern end-----------------------------------------//
+        List<Player> players = new ArrayList<>();
+        Player p1 = new Player("Sanchit",'#');
+        Player p2 = new Player("Sharad",'O');
+
+        players.add(p1);
+        players.add(p2);
+        int size = 3;
+
+        GameEngine engine = new GameEngine(players,3);
+        engine.play();
 
 
     }
